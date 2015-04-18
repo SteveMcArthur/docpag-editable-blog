@@ -1,0 +1,19 @@
+<% posts = @getCollection('posts').toJSON() %>
+<%content = posts[0].contentRenderedWithoutLayouts or posts[0].content%>
+[{
+'title': '<%-posts[0].title%>',
+'date' : '<%-posts[0].date.toDateString()%>',
+'content': '<%=@truncateText(content,700)%>',
+'slug': '<%-posts[0].slug%>',
+'url': '<%-posts[0].url%>'
+<% posts = posts.slice(1)%>
+<% for post in posts: %>
+<%content = post.contentRenderedWithoutLayouts or post.content%>
+},{
+'title': '<%-post.title%>',
+'date' : '<%-post.date.toDateString()%>',
+'content': '<%=@truncateText(content,700)%>',
+'slug': '<%-post.slug%>',
+'url': '<%-post.url%>'
+<%end%>
+}]

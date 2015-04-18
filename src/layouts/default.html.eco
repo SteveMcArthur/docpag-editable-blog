@@ -1,0 +1,27 @@
+---
+layout: base
+---
+    <div class="row">
+        <div class="large-9 columns" role="content">
+        <%- @content %>
+        </div>
+        <aside class="large-3 columns">
+            <h5>Categories</h5>
+            <ul class="side-nav">
+                <% cats=@getCategories() %>
+                <% for item in cats: %>
+                   <li><a href="#" class="item"><%-item%></a></li> 
+                <%end%>
+            </ul>
+            <div class="panel">
+                <h5>Recent Posts</h5>
+                <% for post in @getRecentPosts():%>
+                <div class="item">
+                    <% content=post.content.replace(/<img[^>]+\>/ig,"")%>
+                        <a href="<%=post.url%>"><h6><%-post.title%></h6> <p><%-@truncateText(content,100)%></p></a>
+                </div>
+                <%end%>
+            </div>
+        </aside>
+    </div>
+

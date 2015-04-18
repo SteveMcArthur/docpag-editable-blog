@@ -1,0 +1,23 @@
+<article data-id="<%-@document.slug%>" data-category="<%=@document.category%>">
+    <h2><a href="<%=@document.url%>"><%-@document.title%></a></h2>
+    <p class="article_pub-date">By <%-@document.author || 'Admin'%> on
+        <time datetime="<%= @document.date%>" pubdate=""><%-@document.date.toDateString()%></time>
+    </p>
+
+    <% if !@content:%>
+        <%@content = @document.contentRenderedWithoutLayouts%>
+    <%end%>
+    <%if @truncate && @content:%>
+        <%@content = @truncate(@content,@trimTo || 700)%>
+    <%end%>
+        <div class="large-12 columns post">
+           <%- @content %>
+        </div>
+    <%if !@editMode:%>
+        <%if @truncate && @content:%>
+            <a href="<%=@document.url%>" class="button">Read More</a>
+        <%end%>
+    <%end%>
+</article>
+
+

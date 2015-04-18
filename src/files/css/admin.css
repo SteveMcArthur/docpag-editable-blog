@@ -1,0 +1,143 @@
+#editable-slug {
+    background-color: #fffbcc;
+}
+.slug input.editing {
+    min-width: 250px;
+}
+
+.edit-slug-box {
+    margin-bottom: 10px;
+    position: relative;
+    height: 25px;
+}
+
+.edit-slug-box div {
+    display: inline-block;
+    position: relative;
+}
+
+.edit-slug-box .button {
+    margin: 0 0;
+    border-radius: 2px 0 0 2px;
+    display: inline-block;
+    height: 24px;
+    padding: 4px 6px;
+    outline: 0;
+    cursor: default;
+    border: 1px solid #a6a6a6;
+    border-bottom-color: #979797;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 0 2px rgba(255, 255, 255, .15) inset, 0 1px 0 rgba(255, 255, 255, .15) inset;
+    background: #e4e4e4;
+    color: #474747;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    font: normal normal normal 12px Arial, Helvetica, Tahoma, Verdana, Sans-Serif;
+}
+
+.edit-slug-box h5 {}
+
+.slug-buttons {
+    float: right;
+    margin-top: -5px;
+}
+.slug {
+    float:left;
+    height: 28px;
+}
+.sample-permalink {
+    font-size: 14px;
+    height: 30px;
+}
+.sample-permalink input {
+    margin-top: -5px;
+}
+.editable-post-name {
+    font-size: 16px;
+}
+.major-publishing-actions {
+    height: 35px;
+}
+
+.delete-action {
+  line-height: 28px;
+  vertical-align: middle;
+  text-align: left;
+  float: left;
+}
+.delete-action a {
+ color: #a00;
+    font-size: 13px;
+}
+.publishing-action {
+  text-align: right;
+  float: right;
+  line-height: 23px;
+}
+.panel {
+   padding: 10px 15px; 
+}
+/*
+#extruderLeft {
+    color: white;
+    padding: 5px;
+}
+*/
+
+.dash-container {
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+}
+.dash-container h4 {
+    color: white;
+    margin-left: 20px;
+}
+.dash-container h4 i {
+    font-size: 16px;
+}
+
+.dash-container ul {
+    list-style: none;
+    margin-left: 0;
+}
+.dash-container li {
+    padding-left: 20px;
+/*    border-bottom: 1px solid gray;*/
+}
+.dash-container i, .top-bar i {
+    margin-right: 10px;
+}
+.dash-container li:hover {
+    background: #000;
+}
+.dash-container li a {
+    color: white;
+}
+.dash-container li a:hover {
+    color: #008cba;
+}
+.dash-container li div {
+    color: gray;
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: underline;
+}
+.top-container {
+    z-index: 999;
+    position: relative;
+}
+.extruder-container .top-bar {
+    margin-top: 40px;
+}
+#post-title {
+    font-size: 20px;
+  font-weight: bold;
+}
+
+aside ul {
+ list-style: none;
+    margin-left: 0;
+}
+aside input[type="text"] {
+  height: 2rem;   
+}

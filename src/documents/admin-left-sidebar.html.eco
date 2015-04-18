@@ -1,0 +1,19 @@
+<div class="top-bar">
+    <ul class="title-area">
+        <li class="name">
+            <h1><a href="#"><i class="fi-pencil"></i>Posts</a></h1>
+        </li>
+    </ul>
+</div>
+<div class="dash-container">
+
+    <ul id="dash-posts">
+        <% posts = @getCollection('posts').toJSON() %>
+        <% for post in posts: %>
+        <li><a title="<%-post.title%>" data-slug="<%-post.slug%>" href="#<%-post.slug%>"><%-post.title%>
+            <div><%-post.date.toDateString()%></div>
+            </a>
+        </li>
+        <%end%>
+    </ul>
+</div>

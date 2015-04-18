@@ -1,0 +1,82 @@
+---
+layout: base
+title: Admin
+styles: ["/css/admin.css","/css/mbExtruder.css","/icons/foundation-icons.css","/css/tagmanager.css"]
+scripts: ["/js/ckeditor/ckeditor.js","/js/downshow.js","/js/mb/jquery.hoverIntent.min.js","/js/mb/jquery.mb.flipText.js","/js/mb/mbExtruder.js","/js/tagmanager.js","/js/admin.js"]
+---
+
+    <div class="row">
+        <div class="large-12 columns" role="content">
+            <h2>Edit Page</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-9 columns" role="content">
+            <div class="titlediv">
+
+                <div class="titlewrap">
+                    <input type="text" id="post-title" name="post_title" size="30" value="" placeholder="Enter title here" spellcheck="true" autocomplete="off">
+                </div>
+                <div class="inside">
+                    <div class="edit-slug-box">
+                        <div class="slug">
+                            <strong>Permalink:</strong>
+                            <div class="sample-permalink" tabindex="-1"><span id="permalink-host"></span><span id="editable-slug" title="Click to edit this part of the permalink"></span>
+                            </div>
+                        </div>
+
+                        <div class="slug-buttons">
+                            <a id="edit-slug" href="#post_name" class="button">Edit</a>
+                            <a id="view-page" href="" class="button">View Page</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="post-editor">
+                <div class="editor-tools"></div>
+                <form>
+                    <textarea name="editor1" id="editor1" rows="10" cols="80"></textarea>
+                </form>
+            </div>
+
+        </div>
+        <aside  class="large-3 columns">
+
+            <div class="panel">
+                <h5>Publish</h5>
+                <ul>
+                    <li>Status</li>
+                    <li>Visibility</li>
+                    <li>Publish</li>
+                </ul>
+                <div class="major-publishing-actions">
+                    <div class="delete-action">
+                        <a href="#">Move to Bin</a>
+                    </div>
+
+                    <div class="publishing-action">
+                        <a class="button tiny radius">Publish</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div>
+
+                </div>
+
+            </div>
+
+            <div id="page-attributes" class="panel">
+                <h5>Page Attributes</h5>
+                <ul>
+                    <li>Category: <input type="text" name="category"/></li>
+                    <li>Tags:<br> <input type="text" name="tags" placeholder="Tags" class="tm-input tm-input-success"/></li>
+                    <li>Layout: <input type="text" name="layout"/></li>
+                </ul>
+    
+            </div>
+        </aside>
+    </div>
+
+    <div id="extruderLeft" class="{title:'Posts', url:'admin-left-sidebar.html'}"></div>
