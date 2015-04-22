@@ -1,0 +1,49 @@
+{
+    "name": "docpad-plugin-posteditor",
+    "version": "2.0.0",
+    "description": "DocPad plugin that adds the ability to render Something to Something Else",
+    "homepage": "https://github.com/SteveMcArthur/docpad-plugin-posteditor",
+    "keywords": [
+    "docpad",
+    "docpad-plugin",
+    "posteditor"
+  ],
+    "author": "Steve McArthur <contact@stevemcarthur.co.uk> (http://www.stevemcarthur.co.uk)",
+    "maintainers": [
+    "Steve McArthur <contact@stevemcarthur.co.uk> (https://github.com/SteveMcArthur)"
+  ],
+    "contributors": [
+    "Steve McArthur (https://github.com/SteveMcArthur)"
+  ],
+    "bugs": {
+        "url": "https://github.com/SteveMcArthur/docpad-plugin-posteditor/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SteveMcArthur/docpad-plugin-posteditor.git"
+    },
+    "engines": {
+        "node": ">=0.8"
+    },
+    "peerDependencies": {
+        "docpad": "6"
+    },
+    "dependencies": {
+        "safefs": "^3.1.1"
+    },
+    "devDependencies": {
+        "coffee-script": "~1.6.3",
+        "docpad": "6",
+        "projectz": "~0.3.13"
+    },
+    "main": "./out/posteditor.plugin.js",
+    "scripts": {
+        "test": "node ./out/posteditor.test.js"
+    },
+    "license": {
+        "type": "MIT"
+    },
+    "cakeConfiguration": {
+        "COFFEE_SRC_PATH": "src"
+    }
+}

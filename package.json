@@ -31,7 +31,7 @@
     "npm": "^2.76"
   },
   "dependencies": {
-    "docpad": "^6.78.0",
+    "docpad": "6.72.0",
     "docpad-plugin-cleanurls": "^2.7.0",
     "docpad-plugin-eco": "^2.1.0",
     "docpad-plugin-less": "^2.4.1",
